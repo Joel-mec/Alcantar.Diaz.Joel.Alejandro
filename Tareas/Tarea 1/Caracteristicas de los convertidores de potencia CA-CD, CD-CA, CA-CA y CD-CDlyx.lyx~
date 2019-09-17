@@ -1,0 +1,364 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize letterpaper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\headheight 1cm
+\headsep 1cm
+\footskip 1cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Caracteristicas de los convertidores de potencia CA-CD, CD-CA, CA-CA y CD-CD.
+\end_layout
+
+\begin_layout Author
+Joel Alejandro Alcantar Diaz.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/jaad/Descargas/Tarea 1/UPCDLZMDG5783-logo.png
+	scale 50
+
+\end_inset
+
+
+\begin_inset Newline linebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Universidad Politecnica de la Zona Metropolitana de Guadalajara | Ingenieria
+ Mecatrónica | 4to 
+\begin_inset Quotes eld
+\end_inset
+
+A
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Concepto de un convertidor.
+\end_layout
+
+\begin_layout Standard
+Un convertidor de energía es un sistema o equipo electrónico que tiene por
+ objetivo la convercion de energía eléctrica entre dos formatos diferentes.
+ Por ejemplo obtener corriente continua a partir de corriente alterna.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Convertidor CA-CD
+\end_layout
+
+\begin_layout Standard
+Convertidor AC-CD tambien llamado rectificador, es un tipo de convertidor
+ que tranforma la corriente alterna ya sea trifásica o monofásica en corriente
+ directa.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caracteristicas:
+\end_layout
+
+\begin_layout Itemize
+Alimetan circuitos de exitacion e inducidos.
+\end_layout
+
+\begin_layout Itemize
+Puede rectificar media onda y onda completa.
+\end_layout
+
+\begin_layout Itemize
+El control es escalar y vectorial.
+\end_layout
+
+\begin_layout Itemize
+Funcionan como paso previo a los tranformadores CD-CA de frecuencia y tencion
+ fija.
+\end_layout
+
+\begin_layout Itemize
+Se requiere para el control de motores paso a paso.
+\end_layout
+
+\begin_layout Standard
+La formula de voltaje de salida promedio es:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+Vcd=\frac{2}{T}\int_{0}^{\frac{2}{T}}Vmsen*\omega t
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename /home/jaad/Descargas/Tarea 1/descarga.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Funcionamiento de un rectificador de onda completa.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Convertidor CD-CA.
+\end_layout
+
+\begin_layout Standard
+Los convertidores CD-CA son tambien llamados inversores y su funcion principal
+ es transformar la corriente directa en alterna.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Caracteristicas:
+\end_layout
+
+\begin_layout Itemize
+Se puede controlar la frecuencia y la tension.
+\end_layout
+
+\begin_layout Itemize
+Reciben una onda cuadrada y la hacen senoidal
+\end_layout
+
+\begin_layout Itemize
+Tienen comutacion inperfecta.
+\end_layout
+
+\begin_layout Itemize
+Pueden perder mucha potencia.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Convertidor CD-CD
+\end_layout
+
+\begin_layout Standard
+Este se se puede considerar como una fuente elevadora o reductura de voltaje.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Reductores:
+\end_layout
+
+\begin_layout Standard
+En este convertidor el voltaje de entrada siempre sera mayor al de salida.
+\end_layout
+
+\begin_layout Itemize
+Elevador
+\end_layout
+
+\begin_layout Standard
+En el elevador de voltaje la entrada de tensión siempre sera menor a la
+ salida.
+\end_layout
+
+\begin_layout Itemize
+Cúk
+\end_layout
+
+\begin_layout Standard
+Este regulado, nombrado asi por su inventor, entrega un voltaje que puede
+ ser menor o mayor al de la entrada pero su polaridad es opuesta al de entrada.
+\end_layout
+
+\begin_layout Itemize
+Reductore-Elevadores
+\end_layout
+
+\begin_layout Standard
+Este tipo de regulador puede elevar o disminuir el voltaje, al igual que
+ el Cúk su salida es inversa a la entrada.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\series bold
+\size largest
+Convertidor CA-CA
+\end_layout
+
+\begin_layout Standard
+Caracteristicas:
+\end_layout
+
+\begin_layout Itemize
+Realizan conversión AC-AC de forma directa y sin etapa intermedia de continua.
+\end_layout
+
+\begin_layout Itemize
+Los tristores no necesitan bloqueo forzado gracoas al paso natural por cero
+ de la intensidad.
+\end_layout
+
+\begin_layout Itemize
+Proporcionan una tencion de frecuencia fundamental menor o igual que la
+ frecuencia de la tensión de entrada.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
