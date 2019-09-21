@@ -1,0 +1,242 @@
+\documentclass[letterpaper]{article}
+\usepackage{underscore}
+\usepackage[left=2.0cm, right=2.0cm, top=2.0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage[spanish]{babel}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{subfigure}
+
+\usepackage{color}
+\title{\textbf{Brazo Programable de Fácil Uso }} 
+
+%plantillas de comandos 
+%subrrayado con color de texto    \colorbox{blue}{\textcolor{white}{caca de la vaxa}}
+\author{Ledesma Hernández Miguel Ángel, Carrasco Quiñones Karla Daniela, Reyna Gurrola Marcela\\ y Alcantar Díaz Joel Alejandro.}
+\date{20/09/2019}
+\begin{document}
+\maketitle
+\begin{center}
+    \includegraphics[scale=0.5]{Img/UPZMGlog.png}\\
+    \vspace{1cm}
+    Universidad Politécnica de la Zona Metropolitana de Guadalajara.\\
+    \vspace{1cm}
+Ing. en Mecatrónica.
+\end{center}\newpage
+\begin{large}
+    \begin{LARGE}
+        \textbf{Planteamiento del problema.}\\
+    \end{LARGE}%hola bebe
+    \begin{large}
+    En la actualidad las máquinas estan presentes en cualquier empresa que se pueda considerar autónoma a pesar de la complejidad en la programación de las mismas, esto lleva a muchas empresas emergentes e incluso ya consolidas a no comprarlas por el coste que conlleva un equipo de estos y el temor a no poder usarlas correctamente por falta de personal capacitado para operar las mismas en la empresa. Esto crea problemas ecnómico, ya que no se aprovecha el óptimo funcionamiento de la maquinaria.\\
+    De esto lo mas importante sería la programación del equipo para poder operar el mismo. Esto es mas que nada debido a la poca importancia que en México se le da a automatizar una fábrica, por poner un ejemplo, y el capital económico que esta dispuesto a invertir en la capacitación de sus empleados.\\
+    Es por eso que una unidad que se pueda programar solamente moviendo un similar a escala o del tamaño que se requiera podria sustituir la programación en muchos casos y facilitar el uso de estas unidades.\\
+    \end{large}
+\end{large}
+
+\begin{large}
+    \begin{LARGE}
+       \textbf{Formular el problema.}\\
+    \end{LARGE}
+    
+    ¿Es cara una de estas máquinas?\\
+    Ciertamente su coste sería un poco mas elevado que el de una máquina normal pero la facilidad que brindaría al usuario sería superior a un brazo mecánico común.\\
+    %Esta parte no se si va aquí.
+
+    ¿Es complicado utilizar una de estas máquinas?\\
+    En lo absoluto, la capacitación necesaria para la operación del brazo sería minima dada la capacidad que tendra de memorizar los movimientos que el operador haga con él.\\
+    
+    
+\end{large}
+
+\begin{large}
+    \begin{LARGE}
+        \textbf{Objetivo general.}\\
+       
+       
+        ¿A dónde queremos llegar?\\
+     
+         
+    \end{LARGE}
+        Se quiere crear un brazo mecánico que pueda ser manejable por cualquier persona, siendo así fácil de programar con una GUI[Graphic User Interface]. El coste no cuenta únicamente con el hardware, si no con el trabajo de los desarrolladores y el futuro ingreso por parte de la empresa que solicite el objeto puesto que de no tener un simple GUI requerirá de la contratación de un experto que púeda manipular correctamente la máquina.\\
+ \vspace{.6cm}
+        \begin{figure}[htbp]
+            \centering
+            \includegraphics[scale=0.2]{Img/babas.jpeg}
+            \caption{GUI}
+            \label{fig:gui}
+        \end{figure}\\
+    Dentro de esta interfaz gráfica el usuario podra guardar los datos del movimiento del sistema robótico para despues reproducirlos o crear un espectro calculado de los movimientos que hace [esto es útil para generar documentos con las coordenadas y la cantidad de voltaje que debe pasar por el circuito] para poder simular este movimiento en otros sistemas de la misma categoría. \\
+    Queremos que el sistema sea accesible para todos los usuarios y que sea rentable por costos ademas de funcionamiento. Las aplicaciónes dependerán de la necesidad del usuario. Esto por la adaptabilidad de el brazo[Puede cambiar las puntas para tener distintas funciones], como ejemplo una pinza de punta fina y otra de punta más tosca.\\
+    Queremos que los costos no sean elevados tanto en software[un sistema sencillo] como en hardware $\begin{LARGE}PAG\end{LARGE}^{ Matriz de Costos}$ para que este sistema pueda ser implementado inclusive como método de aprendizaje en alguna institución o en el uso para análisis de circuitos eléctricos y electrónicos.
+        
+\end{large}
+
+\begin{large}
+    \begin{LARGE}
+        \textbf{Objetivos del proyecto.}\\
+    \end{LARGE}
+    \begin{enumerate} 
+        \item Recopilar la información necesaria para la creación del proyecto.
+        \item Estudiar la información recabada.
+        \item Seleccionar la información mas reelevante que se encontró.
+        \item \colorbox{cyan}{Identificar los componentes necesarios para la contrucción del brazo a escala.} 
+        \item Elaborar una lista de precios del material.
+        \item Seleccionar los componentes que mas se ajusten al presupuesto.
+        \item Comprar los componentes.
+        \item Determinar los grados de movimiento del brazo.
+        \item \colorbox{cyan}{Iniciar el armado del primer prototipo.}
+        \item Idear un marco de pruebas para el prototipo.
+        \item Realizar las pruebas necesarias.
+        \item \colorbox{cyan}{Corregir los problemas que puedan presentarse.}
+    \end{enumerate}
+    %no escuho si me neeitan me escriben abajo de obj generales para escribir bien xd
+\end{large}
+\vspace{1.5cm}
+\begin{large}
+    \begin{LARGE}
+        \textbf{Justificación.}\\
+    \end{LARGE}
+    %aquí tienes que poner el texto de la justificación
+    % usa este comando si quieres poner un texto remarcado en azúl \colorbox{blue}{\textcolor{white}{caca de la vaxa}}
+Este proyecto permitirá programar los movimientos del brazo robótico mediante una técnica espejo, lo cual evita es uso de comandos y fallas al momento de compilar el programa. Además, cualquier persona que cuente con los conociminetos básicos sobre cómo guardar los movimientos del robot podrá usarlo y programarlo para cualquier cosa que desée. 
+\end{large}
+\vspace{1.8cm}\\
+\begin{large}
+    \begin{LARGE}
+        \textbf{Delimitación.}\\
+    \end{LARGE}
+  El enfoque que queremos realizar en este proyecto es realizar un brazo robotico funcionable, que nos permita comprender el uso de este conforme a otras materias que tenemos, tambien queremos que nuestro brazo realice movimientos indispensables y factibles para el uso de empresas o para que los futuros alumnos de la UPZMG tengan con que practicar y comprender el mecanismo y movimiento de dicho brazo.
+\end{large}
+
+\begin{large}
+    \begin{LARGE}
+        \textbf{Matriz de roles.}\\
+        
+    \end{LARGE}
+    
+
+%\begin{table}[]
+\begin{tabular}{c|c|c|c|c|}
+\hline
+    Actividades & Joel & Miguel & Marcela & Karla     \\ \hline
+    Investigar sobre el desarrollo y   & R & R & R & R\\   
+    en que nos puede ayudar en nuestra &   &   &   &  \\
+     \\ \hline
+    Cotizamos el coto de los materiales & E & E & E & E \\
+    requeridos para la realización de   &   &   &   &   \\
+    nuestro brazo                       &   &   &   &   \\ \hline
+    Compramos los usos de los componentes que requerimos & N & N & N & N \\
+    para la realización de nuestro brazo.                &   &   &   &   \\ \hline
+    Realizamos el primer prototipo para saber si nuestro & N & N & N & N \\
+    proyecto cometa errores y arreglarlos, asi como saber &  &   &   &   \\
+     si esto esta en funcionamiento.                     &   &   &   &   \\ \hline
+    Haremos pruebas con nuestro brazo para\\ tener en cuenta nuestros errores.   &  N   &  N  &  N  &  N \\ \hline
+    En este tiempo nos encargaremos de repa-\\ rar los errores que tengamos con nuestro\\ brazo. &  N  &   N  &   N   &  N \\\hline
+ 
+\end{tabular}
+\end{large}\\ \newpage
+
+ 
+   
+   
+   \begin{LARGE}
+        \textbf{Diagrama de GANTT.}\\
+       \includegraphics[scale=0.5]{Img/DIAGANTT.png}
+   \end{LARGE}
+   \newpage
+   \begin{large}
+       \begin{large}
+       \textbf{Matriz de materiales y costos.}
+           \begin{table}[]
+\begin{tabular}{|l|l|l|l|} 
+\hline
+Producto      & Costos         & Modelo               & ¿Qué es?                               \\ \hline
+Motor a pasos & 50 pesos       & 28byj-48             & un motor programable                   \\ \hline
+Raspberry     & 780 pesos      & p3                   & una pequeña computadora tamaño tarjeta \\ \hline
+Cables varios & 50c c/u        & cupper               & utilidad de conec                      \\ \hline
+Resistencias  & 50c c/u        & Null                 & Resistores para el flujo de corriente  \\ \hline
+Impresión 3d  & X pesos        & Null                 & impresiones varias                     \\ \hline
+Tubos PVC     & 30 pesos metro & 1/2                  & Soportes del braso                     \\ \hline
+Estaño/cautín & 150 pesos      & generico             & Para soldar                            \\ \hline
+Placa de base & X pesos        & depende del material & donde se montará                       \\ \hline
+Buzzer        & 25 pesos       & Null                 & para el sonido                         \\ \hline
+Leds          & 10 pesos c/u   & Null                 & Lucesitas                              \\ \hline
+\end{tabular}
+\end{table}
+       \end{large}
+   \end{large}
+
+\newpage
+\begin{large}
+\textbf{Explicación de la aportación  de cada materia cursada en el cuatrimestre al proyecto}
+\begin{table}[]
+    \centering
+    \begin{tabular}{|l|l|}
+    \hline
+Matérias de 4to  &  Detalles de aportación al proyecto 
+                        \\ \hline
+Inglés & El inglés es necesario para programar.
+                        \\ \hline
+Ética profesional & Aporta el ser consientes de que esta máquina \\
+                  & no se hace con la intención de sustituir al ser\\
+                  & humano, si no con la inteción de facilitar su\\ 
+                  & trabajo y evitar accidentes. \\
+                        \\\hline
+Estructura y propiedades de los materiales & La selección de un material
+                                 & resistente pero flexible como la
+                                 & medera, ademas del tipo de adhesivo\\
+                                 & que se utilizará.
+                        \\\hline
+Programación de periféricos & Para que el brazo se capaz de guardar
+                            & los movimientos se necesita programarlo
+                            & para lograr crear un interfaz más\\
+                            & gráfica y amigable con el usuario.
+                        \\\hline
+Sistemas electrónicos de interfaz & La fuente que alimentará el brazo
+                                 &deberá contar con los valores de
+                                 & voltaje y corriente necesarios para\\
+                                 & mantenerlo en óptimo mantenimiento.
+                        \\\hline
+Controladores lógicos programables & El funcionamieto principal del\\
+                                &brazo se llevará a cabo gracias a una\\
+                                & tarjeta que mediará los grados de\\
+                                & movimiento del los servo-motores.\\
+                                \hline
+        
+    \end{tabular}
+\end{table}
+
+\end{large}
+
+\begin{large}
+    \begin{LARGE}
+        
+    \end{LARGE}
+\end{large}
+
+\begin{thebibliography}{}
+\bibitem{}
+
+\end{thebibliography}
+
+
+
+
+
+
+
+
+
+
+ 
+
+\end{document}
+
+
+
+
+
+
