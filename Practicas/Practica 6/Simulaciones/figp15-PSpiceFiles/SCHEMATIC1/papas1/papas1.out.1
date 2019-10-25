@@ -1,0 +1,148 @@
+
+**** 10/24/19 17:35:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-papas1"  [ C:\USERS\JOEL_\DOCUMENTS\p3\figp15-PSpiceFiles\SCHEMATIC1\papas1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "papas1.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1 0 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FIGP15
+X_U1         N00124 0 N00380 N00387 N00112 LM741/NS
+R_R1         N00124 N00112  1k  
+R_R2         N00199 N00124  1k  
+V_V1         N00199 0  
++SIN 0 250mV 60 0 0 0
+V_V2         N00387 0   
+V_V3         N00380 0   
+
+**** RESUMING papas1.cir ****
+.END
+
+**** 10/24/19 17:35:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-papas1"  [ C:\USERS\JOEL_\DOCUMENTS\p3\figp15-PSpiceFiles\SCHEMATIC1\papas1.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DX         
+          IS    1.000000E-15 
+
+
+**** 10/24/19 17:35:34 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-papas1"  [ C:\USERS\JOEL_\DOCUMENTS\p3\figp15-PSpiceFiles\SCHEMATIC1\papas1.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  625            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+ERROR -- Convergence problem in transient bias point calculation
+
+
+  Last node voltages tried were:
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00112)-23.12E-06 (N00124)-39.48E-06 (N00199)    0.0000 (N00380)    0.0000     
+
+(N00387)    0.0000 (X_U1.3)-19.74E-06 (X_U1.4)    -.6939 (X_U1.5)    -.0232     
+
+(X_U1.6)    -.0240 (X_U1.7) 873.9E-06 (X_U1.8)   -1.4889 (X_U1.9) 1.976E-18     
+
+(X_U1.10)    1.4889                   (X_U1.15)-46.24E-12                       
+
+(X_U1.16)-570.2E-12                   (X_U1.17)    0.0000                       
+
+(X_U1.20)     .1644                   (X_U1.21)    -.1644                       
+
+(X_U1.22)-23.12E-06                   (X_U1.23)-42.23E-12                       
+
+(X_U1.24) 230.7E-06                   (X_U1.25)-231.1E-06                       
+
+(X_U1.26)     .5937                   (X_U1.27)    -.5937                       
+
+(X_U1.49)    0.0000                   (X_U1.98)    0.0000                   
+
+
+  These voltages failed to converge:
+
+    V(X_U1.5)                 =   -23.14mV  \   -23.18mV
+    V(X_U1.6)                 =   -24.01mV  \   -23.97mV
+    V(X_U1.7)                 =   960.43uV  \   873.93uV
+
+  These supply currents failed to converge:
+
+    I(X_U1.EOS)               =   -74.31nA  \   -74.19nA
+    I(X_U1.EH)                =    1.679uA  \    1.528uA
+    I(X_U1.E1)                =    16.40nA  \    16.36nA
+    I(X_U1.L3)                =    16.40nA  \    16.36nA
+    I(V_V1)                   =   -39.57nA  \   -39.48nA
+    I(V_V2)                   =   -10.00GA  \   -10.00GA
+    I(V_V3)                   =    10.00GA  \    10.00GA
+    I(X_U1.V2)                =   -10.00GA  \   -10.00GA
+    I(X_U1.V3)                =   -10.00GA  \   -10.00GA
+
+Try running with .OPTION STEPGMIN
+
+**** Interrupt ****
