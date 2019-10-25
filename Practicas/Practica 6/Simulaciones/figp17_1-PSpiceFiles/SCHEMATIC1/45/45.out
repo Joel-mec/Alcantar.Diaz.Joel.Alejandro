@@ -1,0 +1,176 @@
+
+**** 10/24/19 23:11:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-45"  [ C:\Users\joel_\Documents\p3\Queso rpresa\figp17_1-pspicefiles\schematic1\45.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "45.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\Cadence\SPB_16.5\tools\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 10ms 0 0 
+.PROBE V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source FIGP17_1
+X_U1         0 N00283 N00701 N00705 N00303 LM741/NS
+V_V1         N00394 0  
++SIN 0 300mV 1k 0 0 0
+R_R1         N00564 N00394  1  
+R_R2         N00568 N00564  1  
+R_R3         0 N00568  1  
+R_R4         N00283 N00303  590  
+R_R5         N00394 N00283  10k  
+R_R6         N00564 N00283  1.5k  
+R_R7         N00568 N00283  1k  
+V_V2         N00701 0 DC 15  
+V_V3         N00705 0 DC -15  
+
+**** RESUMING 45.cir ****
+.END
+
+**** 10/24/19 23:11:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-45"  [ C:\Users\joel_\Documents\p3\Queso rpresa\figp17_1-pspicefiles\schematic1\45.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.DX         
+          IS    1.000000E-15 
+
+
+**** 10/24/19 23:11:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-45"  [ C:\Users\joel_\Documents\p3\Queso rpresa\figp17_1-pspicefiles\schematic1\45.sim ] 
+
+
+ ****     BJT MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1.QX         
+               NPN             
+       LEVEL    1            
+          IS  100.000000E-18 
+          BF  625            
+          NF    1            
+          BR    1            
+          NR    1            
+         ISS    0            
+          RE    0            
+          RC    0            
+         CJE    0            
+         VJE     .75         
+         CJC    0            
+         VJC     .75         
+         MJC     .33         
+        XCJC    1            
+         CJS    0            
+         VJS     .75         
+          KF    0            
+          AF    1            
+          CN    2.42         
+           D     .87         
+
+
+**** 10/24/19 23:11:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-45"  [ C:\Users\joel_\Documents\p3\Queso rpresa\figp17_1-pspicefiles\schematic1\45.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00283)     .0010 (N00303)     .0021 (N00394)    0.0000 (N00564) 777.1E-09     
+
+(N00568) 888.1E-09 (N00701)   15.0000 (N00705)  -15.0000 (X_U1.3) 500.0E-06     
+
+(X_U1.4)    -.6957 (X_U1.5)   14.9740 (X_U1.6)   14.9740 (X_U1.7)     .0010     
+
+(X_U1.8)   13.3700 (X_U1.9)     .0024 (X_U1.10)  -13.3700                       
+
+(X_U1.15)     .0024                   (X_U1.16) 15.81E-09                       
+
+(X_U1.17)    0.0000                   (X_U1.20)     .1821                       
+
+(X_U1.21)    -.1779                   (X_U1.22)     .0021                       
+
+(X_U1.23)     .0024                   (X_U1.24)     .0043                       
+
+(X_U1.25) 511.3E-06                   (X_U1.26)     .6521                       
+
+(X_U1.27)    -.6479                   (X_U1.49)    0.0000                       
+
+(X_U1.98)    0.0000                   
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         8.771E-07
+    V_V2        -1.702E-03
+    V_V3         1.700E-03
+    X_U1.V2      1.337E-11
+    X_U1.V3      1.337E-11
+    X_U1.V6     -7.534E-05
+    X_U1.V7     -7.721E-05
+    X_U1.V5     -1.813E-13
+    X_U1.V4     -1.807E-13
+
+    TOTAL POWER DISSIPATION   5.11E-02  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 10/24/19 23:11:27 ****** PSpice 16.5.0 (April 2011) ****** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-45"  [ C:\Users\joel_\Documents\p3\Queso rpresa\figp17_1-pspicefiles\schematic1\45.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .08
+
