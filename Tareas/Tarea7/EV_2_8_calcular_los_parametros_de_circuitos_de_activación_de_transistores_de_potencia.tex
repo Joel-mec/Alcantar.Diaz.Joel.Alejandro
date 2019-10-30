@@ -1,0 +1,64 @@
+\documentclass[letterpaper]{article}
+\usepackage{underscore}
+\usepackage[left=2.0cm, right=2.0cm, top=2.0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage[spanish]{babel}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{biblatex}
+\usepackage{csquotes}
+\usepackage{color}
+
+\title{EV\_2\_8\_calcular\_los\_parametros\_de\_circuitos\_de\_activación\_de\_transistores\_de\_potencia}
+\author{Alcantar Diaz Joel Alejandro}
+\date{29/Octubre/2019}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+\vspace{2cm}
+\includegraphics[scale=0.5]{UPZMGlog.png}\\
+\vspace{2cm}
+\begin{large}
+    Universidad Politecnica de la Zona Metropolitana de Guadalajara.\\
+    $4^{to}$ $"A"$
+\end{large}
+\end{center}
+
+\newpage
+\section{Transistor en corte y saturación.}
+\begin{large}
+    Se le llama corte y saturación cuando el es transistor se utiliza de tal forma que se comporta como un switch ya que al brindar la corriente necesaria por la base entra en saturacion y permite el paso de la corriente a traves de colector y emisor. Al privarle de esta corriente en la base entra en corte y no permite el paso de la corriente a traves del transistor.\\
+\end{large}
+\section{Calculo de resistencia para la base.}
+\begin{large}
+    Para calcular la resistencia se utiliza la siguiente formula:\\
+    \begin{center}
+        \begin{LARGE}
+            $R=\frac{((V_e-V_{act})hFe)}{I_c}$
+        \end{LARGE}
+    \end{center}
+    Donde R es la resistencia que se va a calcular, $V_e$ es el voltaje de entrada al transistor por la base, $V_{act}$ es el voltaje de saturacion del trancistor que puede ser 0.7 en los de silicio y 0.3 en los de germanio, hFe es el valor de amplificacion del trancistor que se puede encontrar con el Data Sheet o con el multimetro e $I_c$ es la corriente consumida por el circuito conectado al transistor.
+\end{large}
+\section{Ejemplo de uso.}
+\begin{large}
+    Supongamos que tenemos un TIP32C y queremos calcular la resistencia que se necesita para un circuito concetado a el que consume 300mA y un microcontrolador que manda un pulso de 5v, la formula se aplicaria de la siguiente manera:\\\\
+    $R=\frac{((5V-0.7V)10)}{0.3A}$\\\\
+    $R=\frac{((4.3)10)}{0.3A}$\\\\
+    $R=\frac{43}{0.3A}$\\\\
+    $R=143.3$\\\\
+    Da como resultado una resistencia de 143.3$\Omega$, como no existen resistencia de ese valor de manera comercial se busca la mas cercana que es de 150$\Omega$.\\
+    Entonces la resistencia mas ideal para este circuito es de 150$\Omega$, esta resistencia evita que el trancistor amplifique.
+\end{large}
+\begin{thebibliography}{}
+\bibitem{formula}\textsc{Anonimo.} \textit{Calcular la resistencia para un transistor accionado por un microcontrolador.} Recuperdo el 29/10/2019 de:\\
+https://www.sistemasorp.es/2011/10/05/calcular-la-resistencia-para-un-transistor-accionado-por-un-microcontrolador/\\
+\bibitem{DS}\textsc{STMICROELECTRONICS.} \textit{TIP31A/31C TIP32A/32B/32C COMPLEMENTARY SILICON POWER TRANSISTORS.} Recuperdo el 29/10/2019 de:\\
+https://pdf1.alldatasheet.com/datasheet-pdf/view/25376/STMICROELECTRONICS/TIP32C.html\\
+\end{thebibliography}
+\end{document}
