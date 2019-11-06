@@ -1,0 +1,147 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 5DC0D4FE
+P 6400 3150
+F 0 "R1" V 6193 3150 50  0000 C CNN
+F 1 "R" V 6284 3150 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6330 3150 50  0001 C CNN
+F 3 "~" H 6400 3150 50  0001 C CNN
+	1    6400 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_BJT:TIP120 Q1
+U 1 1 5DC0DE0A
+P 7000 3150
+F 0 "Q1" H 7207 3196 50  0000 L CNN
+F 1 "TIP120" H 7207 3105 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 7200 3075 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP120.pdf" H 7000 3150 50  0001 L CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5DC0EF44
+P 7100 3550
+F 0 "#PWR0101" H 7100 3300 50  0001 C CNN
+F 1 "GND" H 7105 3377 50  0000 C CNN
+F 2 "" H 7100 3550 50  0001 C CNN
+F 3 "" H 7100 3550 50  0001 C CNN
+	1    7100 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 5DC0F6D0
+P 6800 2600
+F 0 "D1" V 6846 2472 50  0000 R CNN
+F 1 "DIODE" V 6755 2472 50  0000 R CNN
+F 2 "Diode_THT:D_5W_P10.16mm_Horizontal" H 6800 2600 50  0001 C CNN
+F 3 "~" H 6800 2600 50  0001 C CNN
+	1    6800 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5DC10105
+P 6650 3600
+F 0 "J2" V 6522 3680 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" V 6613 3680 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill0.8mm" H 6650 3600 50  0001 C CNN
+F 3 "~" H 6650 3600 50  0001 C CNN
+	1    6650 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 5DC12340
+P 7350 2550
+F 0 "J3" H 7430 2542 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7430 2451 50  0000 L CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1mm" H 7350 2550 50  0001 C CNN
+F 3 "~" H 7350 2550 50  0001 C CNN
+	1    7350 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 5DC1327D
+P 6300 2700
+F 0 "J1" H 6218 2375 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 6218 2466 50  0000 C CNN
+F 2 "Connector_Wire:SolderWirePad_1x02_P3.81mm_Drill1mm" H 6300 2700 50  0001 C CNN
+F 3 "~" H 6300 2700 50  0001 C CNN
+	1    6300 2700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7150 2550 7150 2400
+Wire Wire Line
+	7150 2400 6800 2400
+Wire Wire Line
+	6500 2600 6500 2400
+Wire Wire Line
+	6500 2400 6800 2400
+Connection ~ 6800 2400
+Wire Wire Line
+	7150 2650 7150 2800
+Wire Wire Line
+	7150 2800 7100 2800
+Wire Wire Line
+	7100 2950 7100 2800
+Connection ~ 7100 2800
+Wire Wire Line
+	7100 2800 6800 2800
+Wire Wire Line
+	6800 3150 6550 3150
+Wire Wire Line
+	7100 3350 7100 3550
+Wire Wire Line
+	6550 3400 6250 3400
+Wire Wire Line
+	6250 3400 6250 3150
+$Comp
+L power:GND #PWR0102
+U 1 1 5DC157B1
+P 6650 3300
+F 0 "#PWR0102" H 6650 3050 50  0001 C CNN
+F 1 "GND" H 6655 3127 50  0000 C CNN
+F 2 "" H 6650 3300 50  0001 C CNN
+F 3 "" H 6650 3300 50  0001 C CNN
+	1    6650 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5DC16086
+P 6550 2800
+F 0 "#PWR0103" H 6550 2550 50  0001 C CNN
+F 1 "GND" H 6555 2627 50  0000 C CNN
+F 2 "" H 6550 2800 50  0001 C CNN
+F 3 "" H 6550 2800 50  0001 C CNN
+	1    6550 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 2700 6550 2700
+Wire Wire Line
+	6550 2700 6550 2800
+Wire Wire Line
+	6650 3300 6650 3400
+$EndSCHEMATC
